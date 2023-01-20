@@ -69,3 +69,21 @@ Se utilizarmos o comando `git clone -branch nome-da-branch repositorio`, consegu
 Para adicionarmos apenas uma modificação para o commit, podemos utilizar o comando `git add nome-do-arquivo`, após isso, podemos utilizar o comando `git commit -m "mensagem-de-commit"` e o commit será feito apenas com esse arquivo.
 
 Se utilizarmos o comando `git add .`, todas as modificações realizadas serão ouvidas, assim, podemos apenas utilizar o comando `git commit -m "mensagem-de-commit"` para commitarmos todas as modificações no arquivo.
+
+# AULA 05 - RAMIFICAÇÕES E MERGE
+
+## BRANCH
+
+O `main`, ou `master`, normalmente, são os locais em que o projeto principal está localizado. Em cenários reais, trabalhamos com `branchs`, que são ramificações do código principal.
+
+O comando `git checkout -b nome-da-branch` permite a criação de uma branch localmente. Essa branch será criada com base em **todo o código da branch em que estávamos anteriormente**.
+
+O comando `git switch main` permite que mudemos para a branch `main`.
+
+## MERGE
+
+O `merge` consiste em juntarmos o código de duas `branchs` em apenas uma.
+
+O comando `git branch` exibe todas as `branchs` que estão disponíveis no projeto.
+
+Se utilizarmos o comando `git merge nome-da-main-que-queremos-juntar`, estamos realizando um `merge`, ou seja, estamos juntando o código da `branch` em que passamos o nome como argumento na `branch` em que estamos no momento.
